@@ -15,14 +15,19 @@ public class UtopianTree {
     }
 
     public static void height(int[] ta) {
-        int[] x=ta;
-        Arrays.sort(x);
+        int pp=ta[0];
+        for (int i = 0; i <ta.length ; i++) {
+            if(pp<ta[i]){
+                pp=ta[i];
+            }
+        }
         int tt = 0;
         int temp = 0;
         boolean p = false;
-        int[] res = new int[x[x.length - 1] + 1];
+        int[] res = new int[pp + 1];
 
-        for (int j = 0; j <= x[x.length - 1]; j++) {
+
+        for (int j = 0; j <= pp; j++) {
             if (!p) {
                 temp++;
                 res[j] = temp;
@@ -34,15 +39,13 @@ public class UtopianTree {
             }
 
         }
-        for (int i = 0; i < ta.length; i++) {
-            System.out.println(ta[i]);
-            for (int j = 0; j < res.length; j++) {
-                if (j == ta[i]) {
 
-                    System.out.println(res[j]);
-                }
-            }
+
+
+        for (int i = 0; i <ta.length; i++) {
+
+            System.out.println(res[ta[i]]);
+        }
 
         }
     }
-}
