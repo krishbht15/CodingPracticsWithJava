@@ -7,17 +7,18 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner s=new Scanner(System.in);
-        int x=s.nextInt();
-        int[] a=new int[x];
-        for (int i = 0; i <x ; i++) {
-            a[i]=s.nextInt();
-        }
-        int y=s.nextInt();
-        int[] b=new int[y];
-        for (int i = 0; i <y ; i++) {
-            b[i]=s.nextInt();
-        }
-        alicesScore(a,b);
+        SuperReducedString.solution("aaabccddd");
+//        int x=s.nextInt();
+//        int[] a=new int[x];
+//        for (int i = 0; i <x ; i++) {
+//            a[i]=s.nextInt();
+//        }
+//        int y=s.nextInt();
+//        int[] b=new int[y];
+//        for (int i = 0; i <y ; i++) {
+//            b[i]=s.nextInt();
+//        }
+//        alicesScore(a,b);
 
     }
 
