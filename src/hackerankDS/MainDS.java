@@ -23,9 +23,8 @@ public class MainDS {
                             if ((aa.charAt(0) == stackUsingA.getData()[stackUsingA.getTop()] && aa.charAt(1) == temp.charAt(j))
                                     || (b.charAt(0) == stackUsingA.getData()[stackUsingA.getTop()] && b.charAt(1) == temp.charAt(j))
                                     || (c.charAt(0) == stackUsingA.getData()[stackUsingA.getTop()] && c.charAt(1) == temp.charAt(j))) {
-                                stackUsingA.pop();
-//                    System.out.println("popping");
-                            } else {
+                                 stackUsingA.pop();
+                           } else {
                                 break;
                             }
                         }
